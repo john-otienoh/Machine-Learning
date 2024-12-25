@@ -40,7 +40,7 @@ score_differences = second_half-first_half
 sorted_scores = scores.sort_values(ascending=False)
 
 # Rounded scores
-rounded_scores = [round(i, -1) for i in list(scores)]
+rounded_scores = [i for i in scores.round(-1)]
 print(f"""
 The scores are 
 {scores}
