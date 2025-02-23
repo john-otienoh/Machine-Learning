@@ -21,3 +21,4 @@ nn_with_self = nn_euclidean.kneighbors_graph(features_standardized).toarray()
 for i, x in enumerate(nn_with_self):
     x[i] = 0
 print(nn_with_self[0])
+
